@@ -3,50 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | S Seths Consultancy</title>
+    <title>S Seths Consultancy</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script> <!-- Link JavaScript for dynamic effects -->
 </head>
 <body>
+
     <header>
-        <img src="assets/Logo.png" alt="S Seths Consultancy Logo" class="logo">
-        <h1>S Seths Consultancy</h1>
+        <a href="index.html"><img src="assets/Logo.png" alt="S Seths Consultancy Logo" class="logo"></a>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Services</a>
+                    <div class="dropdown-content">
+                        <a href="#">Dissertation Writing Services</a>
+                        <a href="#">Essay Writing Services</a>
+                        <a href="#">Assignment Editing Services</a>
+                        <a href="#">Write My Assignment</a>
+                        <a href="#">University Assignment Help</a>
+                        <a href="#">College Assignment</a>
+                        <a href="#">Writing Case Study</a>
+                        <a href="#">Research Report Writing</a>
+                        <a href="#">Capstone Project Writing</a>
+                        <a href="#">TMA Assignment Help UK</a>
+                        <a href="#">HND Assignment Help</a>
+                        <a href="#">BTECH Assignment Help</a>
+                        <a href="#">Online Exam Help</a>
+                        <a href="#">CIPD Assignment Help UK</a>
+                        <a href="#">Assignment Help Germany</a>
+                        <a href="#">Assignment Help Australia</a>
+                    </div>
+                </li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
+    <div class="banner">
+        <!-- Text Content -->
+        <div class="banner-content fade-in">
+            <h1>Welcome to S Seths Consultancy</h1>
+            <p>Your trusted partner for academic success. We provide expert assistance for assignments, projects, and presentations.</p>
+           <a href="contact.html"> <button class="cta-button">Get Started</button> </a> 
+        </div>
+    
+        <!-- Banner Image -->
+        <img src="assets/Banner.jpeg" alt="Consultancy Services">
+        <img src="assets/Banner-2.jpeg" alt="Consultancy Services">
+    </div>
+    
+    
+   
 
-    <section id="home">
-        <h2>Empowering Students to Achieve Academic Excellence</h2>
-        <p>We assist students in completing their assignments, class projects, and presentations.</p>
-        <a href="contact.html" class="cta-button">Get in Touch</a>
-    </section>
-
-    <!-- New Testimonials Section -->
-    <section id="testimonials">
+    <section class="testimonials">
         <h2>What Our Clients Say</h2>
-        <div class="testimonial-container">
-            <div class="testimonial" id="testimonial-1">
-                <p>"S Seths Consultancy helped me complete my assignment on time. Their service is top-notch and I received excellent grades!"</p>
-                <h4>- Emma Watson, Business Student</h4>
+    
+        <div class="carousel">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-slide active"> <!-- First testimonial is active by default -->
+                <div class="testimonial">
+                    <p>"S Seths Consultancy helped me achieve high scores in my assignments. Highly recommended!"</p>
+                    <span>- John Doe, International Student</span>
+                </div>
             </div>
-            <div class="testimonial" id="testimonial-2">
-                <p>"I struggled with my class project, but their team made it so easy. I would highly recommend their services!"</p>
-                <h4>- John Smith, Computer Science Student</h4>
+    
+            <!-- Testimonial 2 -->
+            <div class="testimonial-slide">
+                <div class="testimonial">
+                    <p>"Their services are professional and timely. I always trust them for my academic needs."</p>
+                    <span>- Jane Smith, University Student</span>
+                </div>
             </div>
-            <div class="testimonial" id="testimonial-3">
-                <p>"Their academic support helped me improve my resume. Their assistance is a game changer!"</p>
-                <h4>- Sarah Lee, Marketing Student</h4>
+    
+            <!-- Testimonial 3 -->
+            <div class="testimonial-slide">
+                <div class="testimonial">
+                    <p>"Excellent support and prompt responses. Thank you for making my academic journey easier!"</p>
+                    <span>- Michael Lee, Graduate Student</span>
+                </div>
             </div>
         </div>
+    
+        <!-- Navigation Dots -->
+        <div class="carousel-dots">
+            <span class="dot active"></span> <!-- First dot is active by default -->
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
     </section>
+    
+    
+    <!-- Contact Form -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>We would love to hear from you! Please fill out the form below to reach out to us.</p>
+    
+        <form id="contact-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <div id="name-error" class="error"></div>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <div id="email-error" class="error"></div>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Write your message" required></textarea>
+                <div id="message-error" class="error"></div>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+    
+    
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 S Seths Consultancy. All Rights Reserved.</p>
+        <p>Contact No: +91 9876543210</p>
+        <p>Email: info@sethsconsultancy.com</p>
+        <p>Address: 123 Academic Lane, Knowledge City, India</p>
     </footer>
+
 </body>
 </html>
