@@ -7,25 +7,77 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Header (You can reuse your navbar here) -->
     <header>
-        <img src="assets/Logo.png" alt="S Seths Consultancy Logo" class="logo">
-        
+        <a href="index.html">
+            <img src="assets/Logo.png" alt="S Seths Consultancy Logo" class="logo">
+        </a>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Services</a>
+                    <div class="dropdown-content">
+                            <a href="contact.html">Dissertation Writing Services</a>
+                            <a href="contact.html">Essay Writing Services</a>
+                            <a href="contact.html">Assignment Editing Services</a>
+                            <a href="contact.html">Write My Assignment</a>
+                            <a href="contact.html">University Assignment Help</a>
+                            <a href="contact.html">College Assignment</a>
+                            <a href="contact.html">Writing Case Study</a>
+                            <a href="contact.html">Research Report Writing</a>
+                            <a href="contact.html">Capstone Project Writing</a>
+                    </div>
+                </li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>At S Seths Consultancy, we specialize in helping international students complete regular assignments, class projects, presentations, and more. Our aim is to help students achieve high scores and enhance their resumes through expert academic support.</p>
+    <!-- Introduction Section -->
+    <section class="about-intro">
+        <div class="container">
+          <h1>About Us</h1> 
+            <p>
+                At S Seths Consultancy, we specialize in helping international students excel academically by providing expert assistance with assignments, presentations, and projects. We pride ourselves on offering personalized support and ensuring the highest quality of work.
+            </p>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 S Seths Consultancy. All Rights Reserved.</p>
-    </footer>
+    <!-- Company Values Section -->
+    <section class="company-values">
+        <div class="container">
+            <h2>Our Core Values</h2>
+            <div class="values-grid">
+                <div class="value-box">
+                    <h3>Quality</h3>
+                    <p>We maintain the highest standards of quality, ensuring all work meets academic requirements and exceeds client expectations.</p>
+                </div>
+                <div class="value-box">
+                    <h3>Integrity</h3>
+                    <p>We believe in transparency and honesty, working closely with clients to deliver ethical and reliable support.</p>
+                </div>
+                <div class="value-box">
+                    <h3>Commitment</h3>
+                    <p>Our team is dedicated to helping students achieve their academic goals with timely, accurate, and thorough assistance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Work With Us?</h2>
+            <p>Get in touch today to find out how we can help you achieve academic success.</p>
+            <a href="contact.html" class="cta-button">Contact Us</a>
+        </div>
+    </section>
+
 </body>
 </html>
+
